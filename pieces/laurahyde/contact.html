@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Laura Hyde</title>
+  </head>
+  <body>
+    <header>
+      <!-- Search - Do we need this? -->
+
+      <div class="burger">
+        <button onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+      </div>
+      <!-- Twitter Link -->
+      <!-- Headline - Laura Hyde -->
+      <div class="sitetitle">
+        <a href="./index.html"><h1 class="siteheadline">Laura Hyde</h1></a>
+        <!-- Byline -  Actress Singer Dancer Choreographer
+  -->
+        <h2 class="sitebyline">Actress Singer Dancer Choreographer</h2>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="./video.html">Video</a></li>
+          <li><a href="./audio.html">Audio</a></li>
+          <li class="activepage"><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="https://www.spotlight.com/0099-1208-6322">Spotlight</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="pagetitle">Contact</h2>
+
+    <main>
+      <section id="headlineimg">
+        <img
+          src="./img/headline4.jpg"
+          alt="Laura's Headshot"
+          srcset="
+            ./img/small/headline4_600w.jpg    600w,
+            ./img/medium/headline4_1000w.jpg 1000w
+          "
+          sizes="(max-width: 600px) 600px, 1000px"
+        />
+      </section>
+      <section id="contact">
+        <div class="agent">
+          <p>Laura is represented by:</p>
+          <img src="./img/roseberry.webp" alt="Roseberry Management Logo" />
+          <a href="https://www.roseberymanagement.com/">
+            <p class="agentname">Rosebery Management</p></a
+          >
+          <a href="tel:02076840187">020 7684 0187</a>
+          <a href="mailto:admin@roseberymanagement.com"
+            >admin@roseberymanagement.com</a
+          >
+        </div>
+        <div class="contactform">
+          <p class="explainer">
+            If you wish to contact Laura directly, you can do so using the form
+            below.
+          </p>
+          <form>
+            <label for="name">Name</label>
+            <input type="name" id="name" placeholder="Your Name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email" required />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type your message here!"
+              cols="50"
+              rows="10"
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small
+        >Copyright &#169; 2021 <a href="./index.html">Laura Hyde</a>. All Rights
+        Reserved</small
+      >
+    </footer>
+    <script src="./nav.js"></script>
+  </body>
+</html>
